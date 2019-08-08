@@ -1,0 +1,26 @@
+spring:
+  application:
+    name: initial-template
+  profiles:
+    active: dev
+  servlet:
+    multipart:
+      max-request-size: 100MB # 总上传文件大小
+      max-file-size: 5MB # 单个文件上传大小
+  jackson: # 解决返回时间格式不正确
+    time-zone: GMT+8
+    date-format: yyyy-MM-dd HH:mm:ss
+
+# mybatis 配置
+mybatis:
+  mapper-locations: classpath:mapper/**/*.xml
+  configuration:
+    # 当查询数据为空时字段返回为null
+    call-setters-on-nulls: true
+    # 开启驼峰命名功能
+    map-underscore-to-camel-case: true
+
+# 打印sql
+logging:
+  level:
+    com.framework.initial.mapper: debug
