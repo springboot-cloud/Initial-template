@@ -7,9 +7,9 @@ import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 
 /**
- * @author: litao
- * @description:
- * @createTime: 2019/4/16 0016 09:22
+ * @description
+ * @author xiongfeiyang
+ * @date 2019/8/10 11:19
  */
 public class HelperMD5 {
 

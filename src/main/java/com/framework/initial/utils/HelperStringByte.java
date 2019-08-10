@@ -1,9 +1,9 @@
 package com.framework.initial.utils;
 
 /**
- * @author: litao
- * @description:
- * @createTime: 2019/4/16 0016 09:45
+ * @description
+ * @author xiongfeiyang
+ * @date 2019/8/10 11:19
  */
 public class HelperStringByte {
     /**

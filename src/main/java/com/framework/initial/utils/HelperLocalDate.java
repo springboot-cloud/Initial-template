@@ -8,17 +8,17 @@ import java.time.temporal.TemporalAdjusters;
 import java.util.Date;
 
 /**
- * @author: litao
- * @description:
- * @createTime: 2019/4/16 0016 10:03
+ * @description
+ * @author xiongfeiyang
+ * @date 2019/8/10 11:19
  */
 public class HelperLocalDate {
     public final static String FORMAT_PATTERN1 = "yyyy-MM-dd HH:mm:ss";
-    public final static String FORMAT_PATTERN = "yyyy-MM-dd HH:mm";
-    public final static String FORMAT_PATTERN2 = "yyyyMMddHHmmss";
-    public final static String FORMAT_PATTERN3 = "yyyy-MM-dd";
-    public final static String FORMAT_PATTERN4 = "yyyyMMdd";
-    public final static String FORMAT_PATTERN5 = "yyyy-MM-ddTHH:mm:ssZ";
+    public final static String FORMAT_PATTERN2 = "yyyy-MM-dd HH:mm";
+    public final static String FORMAT_PATTERN3 = "yyyyMMddHHmmss";
+    public final static String FORMAT_PATTERN4 = "yyyy-MM-dd";
+    public final static String FORMAT_PATTERN5 = "yyyyMMdd";
+    public final static String FORMAT_PATTERN6 = "yyyy-MM-ddTHH:mm:ssZ";
 
     /**
      * @return String 返回类型(yyyy-MM-dd)
@@ -27,7 +27,7 @@ public class HelperLocalDate {
      * @Description: 获取String类型的当前日期
      */
     public static String getNowDate() {
-        return localDateFormat(LocalDate.now(), FORMAT_PATTERN3);
+        return localDateFormat(LocalDate.now(), FORMAT_PATTERN4);
     }
 
     /**
@@ -37,7 +37,7 @@ public class HelperLocalDate {
      * @Description: 获取String类型的当前日期
      */
     public static String getNowDate(ZoneId zone) {
-        return localDateFormat(LocalDate.now(zone), FORMAT_PATTERN3);
+        return localDateFormat(LocalDate.now(zone), FORMAT_PATTERN4);
     }
 
     /**
@@ -93,7 +93,7 @@ public class HelperLocalDate {
      * 取得当月的最后一天
      */
     public static String getLastDayStrOfMonth(LocalDate localDate) {
-        return localDateFormat(getLastDayOfMonth(localDate), FORMAT_PATTERN3);
+        return localDateFormat(getLastDayOfMonth(localDate), FORMAT_PATTERN4);
     }
 
     /**
@@ -107,7 +107,7 @@ public class HelperLocalDate {
      * 取得当月的第一天
      */
     public static String getFirstDayStrOfMonth(LocalDate localDate) {
-        return localDateFormat(getFirstDayOfMonth(localDate), FORMAT_PATTERN3);
+        return localDateFormat(getFirstDayOfMonth(localDate), FORMAT_PATTERN4);
     }
 
     /**
